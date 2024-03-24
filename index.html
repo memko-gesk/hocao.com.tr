@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>DevFolio Bootstrap Portfolio Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  
+  <style>
+.renkdegis {
+    color: white;
+    -webkit-animation-name: text;
+    animation-name: text;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+}
+ 
+ @-webkit-keyframes text {
+    0%   {color:#ff1744;}
+    25%  {color:#6a1b9a;}
+    50%  {color:#1e88e5;}
+    75%  {color:#00c853;}
+    100% {color:#ff1744;}
+}
+
+@keyframes text {
+    0%   {color:#ff1744;}
+    25%  {color:#6a1b9a;}
+    50%  {color:#1e88e5;}
+    75%  {color:#00c853;}
+    100% {color:#ff1744;}
+}
+      .btn-3 {
+        width: 300px;
+        height: 30px;
+        border: none;
+        color: white;
+        background-color: #000000;
+        cursor: pointer;
+        text-align: center;
+        -moz-border-radius: 16px;
+        -webkit-border-radius: 16px;
+        border-radius: 16px;
+    }
+     
+    .btn-3:hover {
+        color: #ffffff;
+        background-color: #000000;
+        text-align: end;
+        border: 2px solid #ffffff;
+    }    
+    
+    .btn-1 {
+        width: 47%;
+        height: 10%;
+        border: none;
+        color: white;
+        background-color: #0d5ccc;
+        padding: 10px 20px;
+        margin: 10px;
+        cursor: pointer;
+        border: 2px solid #000000;
+        text-align: center;
+        -moz-border-radius: 16px;
+        -webkit-border-radius: 16px;
+        border-radius: 16px;
+    }
+
+   
+    .btn-1:hover {
+        color: #ffffff;
+        background-color: #4f8363;
+        text-align: center;
+        border: 2px solid #000000;
+    }
+     
+    .btn-2 {
+        width: 90px;
+        height: 90px;
+        border: none;
+        color: white;
+        background-color: #4CAF50;
+        cursor: pointer;
+        text-align: center;
+        border: 2px solid #4CAF50;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+    }
+     
+    .btn-2:hover {
+        color: #ffffff;
+        background-color: #4CAF50;
+        text-align: center;
+        border: 2px solid #4CAF50;
+    }
+    
+
+    .btn-4 {
+        width: 500px;
+        height: 50px;
+        border: none;
+        color: rgb(0, 0, 0);
+        background-color: #79db6c;
+        cursor: pointer;
+        margin: 10px;
+        text-align: center;
+        -moz-border-radius: 16px;
+        -webkit-border-radius: 16px;
+        border-radius: 16px;
+    }
+    
+    .footer {
+      position:fixed;
+      bottom: 0;
+      right: 0;
+      left :0;
+      text-align: center;
+      background : #292268;
+      color: rgb(255, 255, 255);
+      font-size : 13px
+    }
+    #menu {
+    width: 200px;
+    background-color: #4fb99f;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    }
+    ul {
+    padding: 0;
+    margin-right: 5px;
+    list-style-type: none;
+    }
+    ul li a {
+    padding: 12px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 2px;
+    font-size: 10px;
+    }
+    ul li a.active {
+    background-color: #000000;
+    margin-left: 2px;
+    }
+    ul li a:hover:not(.active) {
+    background-color: #06858700;
+    margin-left: 2px;
+    }
+
+    @import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+
+.buttons {
+    margin-top: 15px;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    height: 28px;
+    outline: none;
+    padding: 0;
+    width: 28px;
+}
+
+#play {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play.svg);
+}
+
+#play.played {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play1.svg);
+}
+
+#pause {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause.svg);
+}
+
+#pause.paused {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause1.svg);
+}
+
+#stop {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/stop.svg);
+}
+
+#stop.stopped {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/stop1.svg);
+}
+    
+    </style>
+</head>
+
+
+  
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="bg-black">
+      <div class="containerd-flex align-items-center justify-content-between">
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto renkdegis" style="font-size: 25px;" href="https://hocao.com.tr">Öneriler - Ana Sayfa</a></li>
+            <li><a class="nav-link scrollto" href="/cdn-cgi/l/email-protection#056860686e6a6260766e6c6960716c766c68456268646c692b666a683a080f2525252525252525252525252525237670676f6066713842c6b36bc6b96969c6b9254a6e707c70667025c1b57671606e2523676a617c3849c6b97163606b256760696c77716c69606b6960776c25616a69617077706b707f3f080f2525252525252525252525252525c1b5766c68253f080f2525252525252525252525252525566a7c6c766c68253f2525080f25252525252525252525252525255c64c09a6461c1b4c19ac1b46bc1b47f256c69253f25">Gönüllü Okuyucu Ol!</a></li>
+          </ul>
+          <i class="bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+  
+      </div>
+    </header><!-- End Header -->
+      <div>
+        <button class="btn-1" type="button">#Örnek</button>
+        <button class="btn-1" type="button">#Örnek</button>
+        <button class="btn-1" type="button">#Örnek</button>
+        <button class="btn-1" type="button">#Örnek</button>
+        <button class="btn-1" type="button">#Örnek</button>
+        <button class="btn-1" type="button">#Örnek</button>
+        <button class="btn-1" type="button">#Örnek</button>
+        <button class="btn-1" type="button">#Örnek</button>
+        <button class="btn-1" type="button">#Örnek</button>
+        <button class="btn-1" type="button">#Örnek</button>
+        <button class="btn-1" type="button">#Örnek</button>
+        <button class="btn-1" type="button">#Örnek</button>
+        <button class="btn-1" type="button">#Örnek</button>
+        <button class="btn-1" type="button">#Örnek</button>
+        <button class="btn-1" type="button">#Örnek</button>
+      </div>
+
+        
+        <select id="voices"></select>
+
+
+    
+    
+    
+    
+    <!-- ======= Footer ======= -->
+    <div class="container-fluid">
+      <div class="row footer">
+        <div class="footer" >
+          <div class="copyright-box">
+            <div class="credits">
+              hocao
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End  Footer -->
+
+    
+  
+    <!-- Vendor JS Files -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+  
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <SCRIPT LANGUAGE="Javascript"><!--
+// ***********************************************
+//     UYARISIZ SAG TIK VE F12 ENGELLEME KODU
+// ***********************************************
+   document.onkeypress = function (event) {
+       event = (event || window.event);
+       if (event.keyCode == 123) {
+          //alert('No F-12');
+           return false;
+       }
+   }
+   document.onmousedown = function (event) {
+       event = (event || window.event);
+       if (event.keyCode == 123) {
+           //alert('No F-keys');
+           return false;
+       }
+   }
+document.onkeydown = function (event) {
+       event = (event || window.event);
+       if (event.keyCode == 123) {
+           //alert('No F-keys');
+           return false;
+       }
+   }
+var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+var EnableRightClick = 0;
+if(isNS)
+document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+function mischandler(){
+if(EnableRightClick==1){ return true; }
+else {return false; }
+}
+function mousehandler(e){
+if(EnableRightClick==1){ return true; }
+var myevent = (isNS) ? e : event;
+var eventbutton = (isNS) ? myevent.which : myevent.button;
+if((eventbutton==2)||(eventbutton==3)) return false;
+}
+function keyhandler(e) {
+var myevent = (isNS) ? e : window.event;
+if (myevent.keyCode==96)
+EnableRightClick = 1;
+return;
+}
+document.oncontextmenu = mischandler;
+document.onkeypress = keyhandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+//-->
+</script>
+</body>
+</html>
